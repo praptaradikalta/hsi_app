@@ -1,6 +1,8 @@
 import "package:flutter/material.dart";
 import "package:tes_app/fontstyle.dart";
 
+import "package:tes_app/myflutter_app.dart";
+
 class Profile extends StatelessWidget {
   const Profile({super.key});
 
@@ -16,7 +18,7 @@ class Profile extends StatelessWidget {
             children: [
               Text(
                 'Profil',
-                style: mainHsi,
+                style: mainHsi1,
               ),
               Spacer(),
               Text(
@@ -58,23 +60,160 @@ class Profile extends StatelessWidget {
                       children: [
                         Text(
                           'Prapta Radikalta',
-                          style: mainHsi,
+                          style: mainHsi1,
                         ),
                         Text(
                           'ARN 202 - 03018',
-                          style: mainHsi,
+                          style: mainHsi2,
                         ),
                       ],
                     ),
                     const Spacer(),
-                    const Icon(Icons.edit_square),
+                    // const Icon(Icons.edit_square),
+                    Image.asset("assets/images/pen.png",
+                        width: 25, color: Colors.indigo[900]),
+                    const SizedBox(
+                      width: 5,
+                    ),
+                    Text(
+                      'Ubah',
+                      style: mainHsi1,
+                    ),
                   ],
                 ),
               ),
               Container(
-                padding: const EdgeInsets.all(5),
-                child: const Column(
-                  children: [],
+                padding:
+                    const EdgeInsets.symmetric(vertical: 15, horizontal: 5),
+                decoration: const BoxDecoration(
+                    border: Border(
+                        bottom: BorderSide(
+                  color: Colors.black,
+                  width: 0.2,
+                ))),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Icon(
+                          MyFlutterApp.whatsapp,
+                          size: 30,
+                          color: Colors.indigo[900],
+                        ),
+                        const SizedBox(
+                          width: 5,
+                        ),
+                        Column(
+                          children: [
+                            Text(
+                              'Nomor Whatsapp',
+                              style: hsi16a,
+                            ),
+                            const SizedBox(
+                              height: 5,
+                            ),
+                            Text(
+                              '62 - 85376904583',
+                              style: hsi16b,
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Row(
+                      children: [
+                        Icon(
+                          MyFlutterApp.home,
+                          size: 30,
+                          color: Colors.indigo[900],
+                        ),
+                        const SizedBox(
+                          width: 5,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Alamat',
+                              style: hsi16a,
+                            ),
+                            const SizedBox(
+                              height: 5,
+                            ),
+                            Text(
+                              'Jl.Fl.Tobing No.148, Kelurahan Lestari,\nKecamatan Kisaran Timur',
+                              style: hsi16b,
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Row(
+                      children: [
+                        Icon(
+                          MyFlutterApp.location_outline,
+                          size: 30,
+                          color: Colors.indigo[900],
+                        ),
+                        const SizedBox(
+                          width: 5,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Kabupaten/Kota, Provinsi, Kode Pos',
+                              style: hsi16a,
+                            ),
+                            const SizedBox(
+                              height: 5,
+                            ),
+                            Text(
+                              'KAB. ASAHAN, SUMATERA UTARA, 21221',
+                              style: hsi16b,
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Row(
+                      children: [
+                        Image.asset(
+                          "assets/images/wedding-ring.png",
+                          width: 25,
+                          color: Colors.indigo[900],
+                        ),
+                        const SizedBox(
+                          width: 5,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Status Pernikahan / Jumlah Anak',
+                              style: hsi16a,
+                            ),
+                            const SizedBox(
+                              height: 5,
+                            ),
+                            Text(
+                              'Menikah / 3',
+                              style: hsi16b,
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                  ],
                 ),
               )
             ],

@@ -6,11 +6,30 @@ TextStyle mainHeader = const TextStyle(
 TextStyle subHeader = const TextStyle(
     fontSize: 16, color: Colors.blue, fontFamily: 'Satisfy-Regular');
 
-TextStyle mainHsi = const TextStyle(
+TextStyle mainHsi1 = const TextStyle(
     fontSize: 16,
     color: Colors.black,
     fontWeight: FontWeight.bold,
     fontFamily: 'PlusJakartaSans');
+
+TextStyle mainHsi2 = const TextStyle(
+    fontSize: 16,
+    color: Colors.grey,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'PlusJakartaSans');
+
+TextStyle hsi16a = const TextStyle(
+    fontSize: 16,
+    color: Colors.grey,
+    fontWeight: FontWeight.normal,
+    fontFamily: 'PlusJakartaSans');
+
+TextStyle hsi16b = const TextStyle(
+    fontSize: 16,
+    color: Colors.black,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'PlusJakartaSans');
+
 TextStyle subHsi14 = const TextStyle(
     fontSize: 15, color: Colors.grey, fontFamily: 'PlusJakartaSans');
 TextStyle subHsi12 = const TextStyle(
@@ -18,8 +37,8 @@ TextStyle subHsi12 = const TextStyle(
     color: Colors.grey,
     fontWeight: FontWeight.w600,
     fontFamily: 'PlusJakartaSans');
-TextStyle subHsi10 = const TextStyle(
-    fontSize: 10,
+TextStyle mainHsi12 = const TextStyle(
+    fontSize: 12,
     color: Colors.black,
     // fontWeight: FontWeight.w600,
     fontFamily: 'PlusJakartaSans');
@@ -48,18 +67,23 @@ TextStyle Eva4 = const TextStyle(
     fontFamily: 'PlusJakartaSans');
 
 Color selectColor(String status) {
-  const Color color1 = Colors.indigo;
-  const Color color2 = Colors.green;
-  const Color color3 = Colors.grey;
-  const Color color4 = Colors.red;
+  const Color biru = Colors.indigo;
+  const Color hijau = Colors.green;
+  const Color abu = Colors.grey;
+  const Color merah = Colors.red;
+  const Color hitam = Colors.black;
 
   if (status == 'Selesai') {
-    return color1;
+    return biru;
   } else if (status == 'Belum Dikerjakan') {
-    return color2;
+    return hijau;
   } else if (status == 'Belum Tersedia') {
-    return color3;
+    return abu;
+  } else if (status == 'isian') {
+    return hitam;
+  } else if (status == 'judul') {
+    return abu;
   } else {
-    return color4;
+    return merah;
   }
 }
