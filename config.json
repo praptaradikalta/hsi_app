@@ -1,0 +1,58 @@
+{
+  "name": "",
+  "css_prefix_text": "",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "9d3e9faf68fd4e12def853f0d4e1173b",
+      "css": "whatsapp",
+      "code": 62002,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ca150bc10f3a816413c7687c59dbe118",
+      "css": "home",
+      "code": 59392,
+      "src": "material"
+    },
+    {
+      "uid": "13289e807e02b1d46f2fe10d81d6fba6",
+      "css": "location-outline",
+      "code": 59393,
+      "src": "typicons"
+    },
+    {
+      "uid": "fc5717625bc827d89e1ad906a524aa7d",
+      "css": "headset_mic",
+      "code": 59394,
+      "src": "material"
+    },
+    {
+      "uid": "a0b1df4cea23f22c55b25fb4ebc28075",
+      "css": "info",
+      "code": 59395,
+      "src": "material"
+    },
+    {
+      "uid": "41a48eecc95e7f6cf8bb4820dc99d2f3",
+      "css": "file_download",
+      "code": 59396,
+      "src": "material"
+    },
+    {
+      "uid": "7f374d3b7333829adfc2dc54a08f25f6",
+      "css": "lock-open-empty",
+      "code": 59397,
+      "src": "iconic"
+    },
+    {
+      "uid": "7ad7dd2e1853cb6523e487895b45d45b",
+      "css": "help_outline",
+      "code": 59398,
+      "src": "material"
+    }
+  ]
+}
