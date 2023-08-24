@@ -7,7 +7,7 @@ TextStyle subHeader = const TextStyle(
     fontSize: 16, color: Colors.blue, fontFamily: 'Satisfy-Regular');
 
 TextStyle mainHsi1 = const TextStyle(
-    fontSize: 16,
+    fontSize: 18,
     color: Colors.black,
     fontWeight: FontWeight.bold,
     fontFamily: 'PlusJakartaSans');

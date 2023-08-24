@@ -20,7 +20,7 @@ class Profile extends StatelessWidget {
                 'Profil',
                 style: mainHsi1,
               ),
-              Spacer(),
+              const Spacer(),
               Text(
                 'v.2308-0401',
                 style: subHsi14,
@@ -46,7 +46,6 @@ class Profile extends StatelessWidget {
                   ),
                 )),
                 child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Image.asset(
                       'assets/images/hsi.png',
@@ -57,6 +56,7 @@ class Profile extends StatelessWidget {
                       width: 10,
                     ),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           'Prapta Radikalta',
@@ -77,7 +77,12 @@ class Profile extends StatelessWidget {
                     ),
                     Text(
                       'Ubah',
-                      style: mainHsi1,
+                      style: TextStyle(
+                        color: Colors.indigo[900],
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'PlusJakartaSans',
+                      ),
                     ),
                   ],
                 ),
@@ -215,7 +220,251 @@ class Profile extends StatelessWidget {
                     ),
                   ],
                 ),
-              )
+              ),
+              Container(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 15, horizontal: 5),
+                decoration: const BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(
+                      color: Colors.black,
+                      width: 0.2,
+                    ),
+                  ),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Syahadah & Transkrip',
+                      style: mainHsi1,
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          'Silsilah Ilmiyyah Pembahasan Kitab \nAl Ushul Tsalasah Bagian Ketiga \nREG-2023-S1',
+                        ),
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.blue[100],
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                          ),
+                          onPressed: () {},
+                          child: Row(
+                            children: [
+                              Text(
+                                'Unduh',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.indigo[900],
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              Icon(MyFlutterApp.file_download,
+                                  color: Colors.indigo[900]),
+                            ],
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 15,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(MyFlutterApp.headset_mic,
+                            color: Colors.indigo[900]),
+                        const SizedBox(
+                          width: 5,
+                        ),
+                        Text(
+                          'List Admin',
+                          style: mainHsi1,
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Row(
+                      children: [
+                        Text('Haryadi ', style: hsi16b),
+                        Text(
+                          ' (ARN181-09095)',
+                          style: mainHsi2,
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Text(
+                      'Silsilah Ilmiyyah Pembahasan Kitab Al Ushul Ats Tsalatsah Bagian Kedua',
+                      style: hsi16b,
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      'Grup : ARN202-01',
+                      style: hsi16b,
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          'Program Reguler',
+                          style: TextStyle(
+                            color: Colors.indigo,
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'PlusJakartaSans',
+                          ),
+                        ),
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.green[500],
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                          ),
+                          onPressed: () {},
+                          child: const Row(
+                            children: [
+                              Text(
+                                'Hubungi',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Icon(MyFlutterApp.whatsapp, color: Colors.white),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 15,
+                      ),
+                      decoration: const BoxDecoration(
+                        border: Border(
+                          bottom: BorderSide(
+                            color: Colors.black,
+                            width: 0.2,
+                          ),
+                        ),
+                      ),
+                      child: Row(
+                        children: [
+                          Text('Chairul Anwar ', style: hsi16b),
+                          Text(
+                            ' (ARN182-43051)',
+                            style: mainHsi2,
+                          )
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Text(
+                      'Silsilah Ilmiyyah Pembahasan Kitab Al Ushul Ats Tsalatsah Bagian Kedua',
+                      style: hsi16b,
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      'Grup : ARN202-01',
+                      style: hsi16b,
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          'Program Reguler',
+                          style: TextStyle(
+                            color: Colors.indigo,
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'PlusJakartaSans',
+                          ),
+                        ),
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.green[500],
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                          ),
+                          onPressed: () {},
+                          child: const Row(
+                            children: [
+                              Text(
+                                'Hubungi',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Icon(MyFlutterApp.whatsapp, color: Colors.white),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.symmetric(vertical: 15),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        const Icon(
+                          MyFlutterApp.info,
+                          color: Colors.indigo,
+                        ),
+                        Text(
+                          '  Info Lainnya',
+                          style: mainHsi1,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
