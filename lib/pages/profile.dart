@@ -32,8 +32,10 @@ class Profile extends StatelessWidget {
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(20),
+          // Column Induk Profil
           child: Column(
             children: [
+              // Header Profil
               Container(
                 padding: const EdgeInsets.all(5),
                 height: 55,
@@ -87,6 +89,7 @@ class Profile extends StatelessWidget {
                   ],
                 ),
               ),
+              // Data Profil
               Container(
                 padding:
                     const EdgeInsets.symmetric(vertical: 15, horizontal: 5),
@@ -221,6 +224,7 @@ class Profile extends StatelessWidget {
                   ],
                 ),
               ),
+              // Syahadah & Transkrip
               Container(
                 padding:
                     const EdgeInsets.symmetric(vertical: 15, horizontal: 5),
@@ -278,9 +282,18 @@ class Profile extends StatelessWidget {
                   ],
                 ),
               ),
+              // List Admin
               Container(
                 padding: const EdgeInsets.symmetric(
                   vertical: 15,
+                ),
+                decoration: const BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(
+                      color: Colors.black,
+                      width: 0.2,
+                    ),
+                  ),
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -365,27 +378,33 @@ class Profile extends StatelessWidget {
                         )
                       ],
                     ),
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                        vertical: 15,
-                      ),
-                      decoration: const BoxDecoration(
-                        border: Border(
-                          bottom: BorderSide(
-                            color: Colors.black,
-                            width: 0.2,
-                          ),
+                  ],
+                ),
+              ),
+              // Chairul Anwar
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 15,
+                ),
+                decoration: const BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(
+                      color: Colors.black,
+                      width: 0.2,
+                    ),
+                  ),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Text('Chairul Anwar ', style: hsi16b),
+                        Text(
+                          ' (ARN182-43051)',
+                          style: mainHsi2,
                         ),
-                      ),
-                      child: Row(
-                        children: [
-                          Text('Chairul Anwar ', style: hsi16b),
-                          Text(
-                            ' (ARN182-43051)',
-                            style: mainHsi2,
-                          )
-                        ],
-                      ),
+                      ],
                     ),
                     const SizedBox(
                       height: 15,
@@ -445,6 +464,7 @@ class Profile extends StatelessWidget {
                   ],
                 ),
               ),
+              // Info Lain
               Container(
                 padding: const EdgeInsets.symmetric(vertical: 15),
                 child: Column(
@@ -462,6 +482,133 @@ class Profile extends StatelessWidget {
                         ),
                       ],
                     ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Container(
+                      padding: const EdgeInsets.symmetric(vertical: 20),
+                      decoration: const BoxDecoration(
+                        border: Border(
+                          bottom: BorderSide(
+                            color: Colors.black,
+                            width: 0.2,
+                          ),
+                        ),
+                      ),
+                      child: Row(
+                        children: [
+                          const Icon(
+                            MyFlutterApp.lock_open_empty,
+                            color: Colors.indigo,
+                          ),
+                          const SizedBox(
+                            width: 15,
+                          ),
+                          Text(
+                            'Ganti Password',
+                            style: hsi16b,
+                          ),
+                          const Spacer(),
+                          const Icon(
+                            Icons.arrow_forward_ios_outlined,
+                            color: Colors.indigo,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.symmetric(vertical: 20),
+                      decoration: const BoxDecoration(
+                        border: Border(
+                          bottom: BorderSide(
+                            color: Colors.black,
+                            width: 0.2,
+                          ),
+                        ),
+                      ),
+                      child: Row(
+                        children: [
+                          const Icon(
+                            MyFlutterApp.help_outline,
+                            color: Colors.indigo,
+                          ),
+                          const SizedBox(
+                            width: 15,
+                          ),
+                          Text(
+                            'Bantuan',
+                            style: hsi16b,
+                          ),
+                          const Spacer(),
+                          const Icon(
+                            Icons.arrow_forward_ios_outlined,
+                            color: Colors.indigo,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.symmetric(vertical: 20),
+                      // decoration: const BoxDecoration(
+                      //   border: Border(
+                      //     bottom: BorderSide(
+                      //       color: Colors.black,
+                      //       width: 0.2,
+                      //     ),
+                      //   ),
+                      // ),
+                      child: Row(
+                        children: [
+                          Image.asset(
+                            "assets/images/security.png",
+                            width: 25,
+                            color: Colors.indigo[900],
+                          ),
+                          const SizedBox(
+                            width: 15,
+                          ),
+                          Text(
+                            'Kebijakan Privasi',
+                            style: hsi16b,
+                          ),
+                          const Spacer(),
+                          const Icon(
+                            Icons.arrow_forward_ios_outlined,
+                            color: Colors.indigo,
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      padding: const EdgeInsets.symmetric(vertical: 15),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Colors.red,
+                            width: 1,
+                          )),
+                      child: const Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Keluar',
+                            style: TextStyle(
+                              color: Colors.red,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: 'PlusJakartaSans',
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    //     ),
+                    //   ),
+
+                    // ),
                   ],
                 ),
               ),
