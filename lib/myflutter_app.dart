@@ -11,7 +11,7 @@
 ///      fonts:
 ///       - asset: fonts/MyFlutterApp.ttf
 ///
-/// 
+///
 /// * Material Design Icons, Copyright (C) Google, Inc
 ///         Author:    Google
 ///         License:   Apache 2.0 (https://www.apache.org/licenses/LICENSE-2.0)
@@ -35,14 +35,25 @@ class MyFlutterApp {
   MyFlutterApp._();
 
   static const _kFontFam = 'MyFlutterApp';
+  static const _kFontFam2 = 'HsiApp';
   static const String? _kFontPkg = null;
 
-  static const IconData home = IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData location_outline = IconData(0xe801, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData headset_mic = IconData(0xe802, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData info = IconData(0xe803, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_download = IconData(0xe804, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData lock_open_empty = IconData(0xe805, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData help_outline = IconData(0xe806, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData whatsapp = IconData(0xf232, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData home =
+      IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData location_outline =
+      IconData(0xe801, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData headset_mic =
+      IconData(0xe802, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData info =
+      IconData(0xe803, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData file_download =
+      IconData(0xe804, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData lock_open_empty =
+      IconData(0xe805, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData help_outline =
+      IconData(0xe806, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData whatsapp =
+      IconData(0xf232, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData file_alt =
+      IconData(0xf15c, fontFamily: _kFontFam2, fontPackage: _kFontPkg);
 }

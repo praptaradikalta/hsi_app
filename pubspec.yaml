@@ -1,4 +1,5 @@
-name: tes_app
+name: hsi_app
+
 description: A new Flutter project.
 
 
@@ -94,6 +95,11 @@ flutter:
     - family:  MyFlutterApp
       fonts:
        - asset: assets/fonts/MyFlutterApp.ttf
+    - family:  HsiApp
+      fonts:
+       - asset: assets/fonts/HsiApp.ttf
+    
+
 
   
   

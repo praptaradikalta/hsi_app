@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
-import "package:tes_app/fontstyle.dart";
+import "package:hsi_app/fontstyle.dart";
 
-import "package:tes_app/myflutter_app.dart";
+import "package:hsi_app/myflutter_app.dart";
 
 class Profile extends StatelessWidget {
   const Profile({super.key});
